@@ -5,19 +5,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ufit.ai - Discover Your Style</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <style>
         body {
             margin: 0;
-            font-family: 'Arial', sans-serif;
+            font-family: 'Roboto', sans-serif;
             background-color: #f9f9f9;
-            color: #333;
-            overflow-x: hidden;
+            color: #555;
+            overflow: hidden;
         }
 
         .hero {
             position: relative;
             height: 100vh;
-            background: url('background.jpeg') center/cover no-repeat;
+            background: linear-gradient(to bottom, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.4)), url('background.jpeg') center top/cover no-repeat;
             display: flex;
             flex-direction: column;
             align-items: center;
@@ -44,12 +45,14 @@
 
         .hero h1 {
             font-size: 3rem;
-            margin: 0 0 20px;
+            margin: 0 0 10px;
+            text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7);
         }
 
-        .hero p {
-            font-size: 1.2rem;
-            margin: 0 0 40px;
+        .hero h2 {
+            font-size: 1.5rem;
+            margin: 0 0 30px;
+            text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7);
         }
 
         .hero .buttons {
@@ -58,92 +61,17 @@
             justify-content: center;
         }
 
-        .hero button {
-            padding: 15px 30px;
-            font-size: 1rem;
-            border: none;
-            cursor: pointer;
-            border-radius: 25px;
-            transition: all 0.3s;
-        }
-
-        .btn-primary {
-            background-color: #ff6f61;
-            color: #fff;
-        }
-
-        .btn-primary:hover {
-            background-color: #e85d50;
-        }
-
-        .btn-secondary {
-            background-color: transparent;
-            color: #fff;
-            border: 2px solid #fff;
-        }
-
-        .btn-secondary:hover {
-            background-color: #fff;
-            color: #ff6f61;
-        }
-
-        .features {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 20px;
-            padding: 50px 20px;
-            text-align: center;
-        }
-
-        .features .feature {
-            background-color: #fff;
-            padding: 20px;
-            border-radius: 10px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-        }
-
-        .features .feature h3 {
-            margin-bottom: 10px;
-            font-size: 1.5rem;
-        }
-
-        .features .feature p {
-            font-size: 1rem;
-            color: #555;
-        }
-
-        .cta {
-            text-align: center;
-            padding: 50px 20px;
-            background-color: #ff6f61;
-            color: #fff;
-        }
-
-        .cta h2 {
-            font-size: 2.5rem;
-            margin-bottom: 20px;
-        }
-
-        .cta button {
-            padding: 15px 30px;
-            font-size: 1rem;
-            border: none;
-            cursor: pointer;
-            background-color: #fff;
-            color: #ff6f61;
-            border-radius: 25px;
-            transition: all 0.3s;
-        }
-
-        .cta button:hover {
-            background-color: #e85d50;
-            color: #fff;
+        .hero .buttons figure {
+            margin: 0;
         }
 
         .footer {
+            position: absolute;
+            bottom: 0;
+            width: 100%;
             text-align: center;
-            padding: 20px;
-            background-color: #333;
+            padding: 10px;
+            background: transparent;
             color: #fff;
         }
 
@@ -155,53 +83,66 @@
         .footer a:hover {
             text-decoration: underline;
         }
+
+        .header {
+            position: absolute;
+            top: 0;
+            width: 100%;
+            padding: 20px;
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            font-size: 1.8rem;
+            font-weight: bold;
+            color: #fff;
+            z-index: 2;
+        }
+
+        .header span {
+            margin-left: 20px;
+        }
     </style>
 </head>
 
 <body>
 
+    <!-- Header Section -->
+    <header class="header">
+        <span>Ufit.AI</span>
+    </header>
+
     <!-- Hero Section -->
     <section class="hero">
         <div class="hero-overlay"></div>
         <div class="hero-content">
-            <h1>Discover Your Best Look with Ufit.ai</h1>
+            <h1>Discover Your Best Look</h1>
+            <h2>Take the Guesswork Out of Style</h2>
             <p>Analyze your style and get personalized outfit recommendations instantly.</p>
             <div class="buttons">
-                <button class="btn-primary">Upload Your Picture</button>
-                <button class="btn-secondary">Learn More</button>
+                <figure>
+                    <a href="https://apps.apple.com/ae/app/auramax-ai/id6733243773" class="kb-advanced-image-link"
+                        target="_blank" rel="noopener">
+                        <img decoding="async" width="300" height="87"
+                            src="https://auramax.ai/wp-content/uploads/2024/10/appstore-300x87.png"
+                            alt="Download on App Store">
+                    </a>
+                </figure>
+                <figure>
+                    <a href="https://play.google.com/store/apps/details?id=com.aura.aura.max&amp;pcampaignid=web_share"
+                        class="kb-advanced-image-link" target="_blank" rel="noopener">
+                        <img decoding="async" width="300" height="87"
+                            src="https://auramax.ai/wp-content/uploads/2024/10/googleplay-300x87.png"
+                            alt="Download on Google Play">
+                    </a>
+                </figure>
             </div>
         </div>
     </section>
 
-    <!-- Features Section -->
-    <section class="features">
-        <div class="feature">
-            <h3>Personalized Recommendations</h3>
-            <p>Get outfits curated just for you.</p>
-        </div>
-        <div class="feature">
-            <h3>Style Analytics</h3>
-            <p>Find out what works for your vibe.</p>
-        </div>
-        <div class="feature">
-            <h3>Trendy Suggestions</h3>
-            <p>Stay ahead with the latest trends.</p>
-        </div>
-        <div class="feature">
-            <h3>Effortless Shopping</h3>
-            <p>Shop styles that match instantly.</p>
-        </div>
-    </section>
-
-    <!-- Call-to-Action Section -->
-    <section class="cta">
-        <h2>Take the Guesswork Out of Style</h2>
-        <button>Start Now – It’s Free!</button>
-    </section>
-
     <!-- Footer Section -->
     <footer class="footer">
-        <p>© 2025 Ufit.ai | <a href="#">Privacy Policy</a> | <a href="#">FAQs</a></p>
+        <p>© 2025 Ufit.ai | <a href="terms.html">Terms and Conditions</a> | <a href="privacy.html">Privacy Policy</a>
+        </p>
     </footer>
 
 </body>
