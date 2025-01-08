@@ -4,66 +4,168 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Terms and Conditions</title>
+    <title>Privacy Policy</title>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <style>
         body {
             margin: 0;
             font-family: 'Roboto', sans-serif;
-            background-color: #f9f9f9;
+            background: linear-gradient(to bottom, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.4)), url('background.jpeg') center top/cover no-repeat;
+            color: #fff;
+            overflow: auto;
+        }
+
+        .hero {
+            position: relative;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            padding: 20px;
+        }
+
+        .hero-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.5);
+            z-index: 0;
+        }
+
+        .hero-content {
+            position: relative;
+            z-index: 1;
+            width: 100%;
+            max-width: 900px;
+            padding: 20px;
+        }
+
+        .hero h1 {
+            font-size: 3rem;
+            margin: 0 0 10px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+        }
+
+        .content {
+            background: rgba(255, 255, 255, 0.7);
+            /* Adjusted transparency */
             color: #333;
-            line-height: 1.6;
-            padding: 20px;
+            border-radius: 10px;
+            padding: 30px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            margin-top: 20px;
+            text-align: left;
         }
 
-        header {
+        .content h1 {
             text-align: center;
-            margin-bottom: 40px;
+            font-size: 2rem;
+            color: #222;
+            margin-bottom: 20px;
         }
 
-        header h1 {
-            font-size: 2.5rem;
-            margin: 0;
+        .content p {
+            line-height: 1.8;
+            margin-bottom: 20px;
         }
 
-        main {
-            max-width: 800px;
-            margin: 0 auto;
-            padding: 20px;
-            background: #fff;
-            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-            border-radius: 8px;
-        }
-
-        footer {
+        .footer {
+            width: 100%;
             text-align: center;
-            margin-top: 40px;
-            font-size: 0.9rem;
-            color: #666;
+            padding: 10px;
+            background: rgba(0, 0, 0, 0.8);
+            color: #fff;
+            position: relative;
+            bottom: 0;
         }
 
-        footer a {
+        .footer a {
             color: #ff6f61;
             text-decoration: none;
         }
 
-        footer a:hover {
+        .footer a:hover {
             text-decoration: underline;
+        }
+
+        .header {
+            position: absolute;
+            top: 0;
+            width: 100%;
+            padding: 20px;
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            font-size: 1.8rem;
+            font-weight: bold;
+            z-index: 2;
+            color: #fff;
+        }
+
+        .header span {
+            margin-left: 20px;
+        }
+
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 2.5rem;
+            }
+
+            .content {
+                padding: 20px;
+            }
+
+            .content h1 {
+                font-size: 1.8rem;
+            }
         }
     </style>
 </head>
 
 <body>
 
-    <header>
-        <h1>Terms and Conditions</h1>
+    <!-- Header Section -->
+    <header class="header">
+        <span>Ufit.AI</span>
     </header>
 
-    <main>
-        <p><em>Add your terms and conditions content here...</em></p>
-    </main>
+    <!-- Content Section -->
+    <section class="hero">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <div class="content">
+                <h1>Terms and Condition</h1>
+                <div class="entry-content single-content">
+                    <h2>Welcome to Ufit.ai</h2>
+                    <p>By using our app, you agree to the following terms and conditions:</p>
+                    <h3>1. User Responsibilities</h3>
+                    <p>You are responsible for providing accurate information when creating an account and using the
+                        App. Misuse of the app, including uploading inappropriate images, is strictly prohibited.</p>
+                    <h3>2. Intellectual Property</h3>
+                    <p>All content and recommendations provided by ufit.ai are the property of the app and are protected
+                        by intellectual property laws. You are prohibited from reproducing or distributing any of this
+                        content without prior written consent.</p>
+                    <h3>3. Limitation of Liability</h3>
+                    <p>Ufit.ai is not responsible for any damages or losses resulting from your use of the app. Outfit
+                        recommendations are provided as suggestions, and the final decision lies with the user.</p>
+                    <h3>4. Termination</h3>
+                    <p>We reserve the right to terminate your account if you violate these terms.</p>
+                    <h3>5. Changes to Terms</h3>
+                    <p>We may update these Terms and Conditions from time to time. You will be notified of any
+                        significant changes within the app.</p>
+                    <h3>6. Governing Law</h3>
+                    <p>These terms are governed by the laws of United States.</p>
+                </div>
+            </div>
+        </div>
+    </section>
 
-    <footer>
+    <!-- Footer Section -->
+    <footer class="footer">
         <p>© 2025 Ufit.ai | <a href="index.html">Back to Home</a></p>
     </footer>
 
