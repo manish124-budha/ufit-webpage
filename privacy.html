@@ -52,7 +52,7 @@
         }
 
         .content {
-            background: rgba(255, 255, 255, 0.7); /* Adjusted transparency */
+            background: rgba(255, 255, 255, 0.9);
             color: #333;
             border-radius: 10px;
             padding: 30px;
@@ -68,9 +68,18 @@
             margin-bottom: 20px;
         }
 
-        .content p {
+        .content p,
+        .content ul {
             line-height: 1.8;
             margin-bottom: 20px;
+        }
+
+        .content ul {
+            padding-left: 20px;
+        }
+
+        .content ul li {
+            margin-bottom: 10px;
         }
 
         .footer {
@@ -110,6 +119,7 @@
             margin-left: 20px;
         }
 
+        /* Responsive Styling */
         @media (max-width: 768px) {
             .hero h1 {
                 font-size: 2.5rem;
@@ -121,6 +131,39 @@
 
             .content h1 {
                 font-size: 1.8rem;
+            }
+
+            .content p,
+            .content ul li {
+                font-size: 1rem;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .hero h1 {
+                font-size: 2rem;
+            }
+
+            .content {
+                padding: 15px;
+            }
+
+            .content h1 {
+                font-size: 1.5rem;
+            }
+
+            .content p,
+            .content ul li {
+                font-size: 0.9rem;
+            }
+
+            .header {
+                font-size: 1.5rem;
+                padding: 10px;
+            }
+
+            .footer {
+                font-size: 0.8rem;
             }
         }
     </style>
@@ -140,116 +183,58 @@
             <div class="content">
                 <h1>Privacy Policy</h1>
                 <div class="entry-content single-content">
-                
-                    <h4 class="wp-block-heading"><strong>Data Protection</strong></h4>
-                
-                
-                
-                    <p>Welcome to ufit.ai ("we," "our," or "us"). Protecting your privacy is our priority. This Privacy Policy explains how we
-                    collect, use, and safeguard your information when you use our application ("App"). By using the App, you agree to the
-                    terms of this Privacy Policy.</p>
-                
-                
-                
+                    <h4><strong>Data Protection</strong></h4>
+                    <p>Welcome to ufit.ai ("we," "our," or "us"). Protecting your privacy is our priority. This Privacy
+                        Policy explains how we
+                        collect, use, and safeguard your information when you use our application ("App"). By using the
+                        App, you agree to the
+                        terms of this Privacy Policy.</p>
                     <p>If you wish to remove your data from our systems, we fully comply with deletion requests,
                         ensuring all account and related information is permanently removed.</p>
-                
-                
-                
-                    <h4 class="wp-block-heading"><strong>Data Security</strong></h4>
-                
-                
-                
+
+                    <h4><strong>Data Security</strong></h4>
                     <p>We implement strong security measures to protect your data, including:</p>
-                
-                
-                
-                    <ul class="wp-block-list">
+                    <ul>
                         <li><strong>Industry-Standard Authentication:</strong> Ensuring only authorized users can access
                             the app.</li>
-                
-                
-                
                         <li><strong>Regular Security Audits:</strong> Conducting periodic checks to ensure our platform
                             remains secure.</li>
-                
-                
-                
                         <li><strong>Employee Access Controls:</strong> Only authorized personnel have access to
                             sensitive data.</li>
                     </ul>
-                
-                
-                
-                    <p>Your personal data is stored on Microsoft Azure, which adheres to global data protection
-                        standards.</p>
-                
-                
-                
-                    <h4 class="wp-block-heading"><strong>Information We Collect and How we use it</strong></h4>
-                
-                
-                
+
+                    <h4><strong>Information We Collect and How We Use It</strong></h4>
                     <p>We collect the following types of information when you use ufit.ai:</p>
-                
-                
-                
-                    <ul class="wp-block-list">
-                        <li><strong>Photos:</strong> We ask users to upload their photos for analysis purposes. These photos are used to analyze body features to provide
-                        personalized outfit recommendations.</li>
-                
-                        <li><strong>Profile Information:</strong> Information such as your name, email address, gender, preferences, or any other details you provide while creating an
-                        account.</li>
-                
-                        <li><strong>Event Preferences:</strong> When you input events (e.g., weddings, parties), we use this data to suggest outfits appropriate for the occasion.</li>
-                
-                        <li><strong>Country or Location:</strong> We use the country information you provide to recommend outfits suitable for local culture, weather and the link to the clothes.</li>
-                
-                        <li><strong>Country or Location:</strong> We use the country information you provide to recommend outfits suitable for
-                            local culture, weather and the link to the clothes.</li>
-
-                
-                    <h4 class="wp-block-heading"><strong>Limitation of Liability</strong></h4>
-                
-                
-                    <p>While we take all possible precautions to protect your data, we cannot be held liable for events
-                        beyond our control, including but not limited to:</p>
-                
-                    <ul class="wp-block-list">
-                        <li>Unauthorized access to your personal devices.</li>
-                
-                        <li>Data breaches on third-party platforms.</li>
-                
-                        <li>Any information you voluntarily choose to share with others.</li>
-                    </ul>
-                
-                    <h4 class="wp-block-heading"><strong>Your Rights</strong></h4>
-                
-                    <p>You have the following rights concerning your data:</p>
-                
-                    <ul class="wp-block-list">
-                        <li><strong>Access:</strong> You may request access to all personal data we hold about you.</li>
-                
-                        <li><strong>Correction:</strong> If there are inaccuracies in your data, you may request
-                            corrections.</li>
-                
-                        <li><strong>Deletion:</strong> You may request the deletion of your personal data at any time.
+                    <ul>
+                        <li><strong>Photos:</strong> Used to analyze body features for personalized outfit
+                            recommendations.</li>
+                        <li><strong>Profile Information:</strong> Your name, email, gender, and preferences for account
+                            setup.</li>
+                        <li><strong>Event Preferences:</strong> To suggest event-appropriate outfits.</li>
+                        <li><strong>Country or Location:</strong> Helps recommend weather and culture-specific outfits.
                         </li>
-                
-                        <li><strong>Opt-out:</strong> You may opt out of specific data processing activities that you do
-                            not wish to participate in.</li>
                     </ul>
-                
-                
-                
-                    <p>For any questions or concerns regarding this privacy policy or your data, please contact our
-                        support team at <strong><a>support@ufitai.com</a></strong>.</p>
-                
-                
-                
-                    <p></p>
-                </div>
 
+                    <h4><strong>Limitation of Liability</strong></h4>
+                    <p>While we take all possible precautions to protect your data, we cannot be held liable for events
+                        beyond our control, including:</p>
+                    <ul>
+                        <li>Unauthorized access to your devices.</li>
+                        <li>Data breaches on third-party platforms.</li>
+                        <li>Information you voluntarily share with others.</li>
+                    </ul>
+
+                    <h4><strong>Your Rights</strong></h4>
+                    <p>You have the following rights concerning your data:</p>
+                    <ul>
+                        <li><strong>Access:</strong> Request access to your personal data.</li>
+                        <li><strong>Correction:</strong> Request corrections to inaccurate data.</li>
+                        <li><strong>Deletion:</strong> Request the deletion of your data.</li>
+                        <li><strong>Opt-out:</strong> Opt out of certain data processing activities.</li>
+                    </ul>
+                    <p>For questions, contact our support team at <strong><a
+                                href="mailto:support@ufitai.com">support@ufitai.com</a></strong>.</p>
+                </div>
             </div>
         </div>
     </section>

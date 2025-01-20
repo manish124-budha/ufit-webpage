@@ -13,7 +13,7 @@
             font-family: 'Roboto', sans-serif;
             background-color: #f9f9f9;
             color: #555;
-            overflow: hidden;
+            overflow: auto;
         }
 
         .hero {
@@ -56,6 +56,10 @@
             text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7);
         }
 
+        .hero p {
+            margin-bottom: 30px;
+        }
+
         .hero .buttons {
             display: flex;
             gap: 20px;
@@ -64,6 +68,12 @@
 
         .hero .buttons figure {
             margin: 0;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+            display: block;
         }
 
         .footer {
@@ -102,6 +112,64 @@
         .header span {
             margin-left: 20px;
         }
+
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 2rem;
+            }
+
+            .hero h2 {
+                font-size: 1.2rem;
+            }
+
+            .hero-content {
+                padding: 10px;
+            }
+
+            .hero .buttons {
+                flex-direction: column;
+                gap: 10px;
+            }
+
+            .hero .buttons figure {
+                width: 100%;
+            }
+
+            .hero .buttons img {
+                width: 80%;
+            }
+
+            .header {
+                font-size: 1.5rem;
+                padding: 10px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .hero h1 {
+                font-size: 1.8rem;
+            }
+
+            .hero h2 {
+                font-size: 1rem;
+            }
+
+            .hero-content {
+                padding: 5px;
+            }
+
+            .hero .buttons img {
+                width: 90%;
+            }
+
+            .header {
+                font-size: 1.2rem;
+            }
+
+            .footer {
+                font-size: 0.8rem;
+            }
+        }
     </style>
 </head>
 
@@ -123,16 +191,12 @@
                 <figure>
                     <a href="https://apps.apple.com/us/app/ufit-ai/id6738328775" class="kb-advanced-image-link"
                         target="_blank" rel="noopener">
-                        <img decoding="async" width="300" height="87"
-                            src="appstore.png"
-                            alt="Download on App Store">
+                        <img decoding="async" width="300" height="87" src="appstore.png" alt="Download on App Store">
                     </a>
                 </figure>
                 <figure>
-                    <a
-                        class="kb-advanced-image-link" target="_blank" rel="noopener">
-                        <img decoding="async" width="300" height="87"
-                            src="coming-soon-google.png"
+                    <a class="kb-advanced-image-link" target="_blank" rel="noopener">
+                        <img decoding="async" width="300" height="87" src="coming-soon-google.png"
                             alt="Download on Google Play">
                     </a>
                 </figure>
